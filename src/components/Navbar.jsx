@@ -1,6 +1,6 @@
 import { Bell } from "lucide-react";
 
-const menus = ["Dashboard", "Loans", "Deposits", "Documents", "Reports"];
+const NAV_ITEMS = ["Dashboard", "Loans", "Deposits", "Documents", "Reports"];
 
 export default function Navbar({ activePage, setActivePage }) {
   return (
@@ -11,23 +11,20 @@ export default function Navbar({ activePage, setActivePage }) {
       {/* 2. Menu Tengah */}
       <nav>
         <ul className="flex items-center gap-2">
-          {menus.map((menu) => {
-            const isActive = activePage === menu;
-            return (
-              <li key={menu}>
-                <button
-                  onClick={() => setActivePage(menu)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition cursor-pointer ${
-                    isActive
-                      ? "bg-white/20 text-white"
-                      : "text-white/70 hover:text-white"
-                  }`}
-                >
-                  {menu}
-                </button>
-              </li>
-            );
-          })}
+          {NAV_ITEMS.map((item) => (
+            <li key={item}>
+              <button
+                onClick={() => setActivePage(item)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition cursor-pointer ${
+                  activePage === item
+                    ? "bg-white/20 text-white"
+                    : "text-white/70 hover:text-white"
+                }`}
+              >
+                {item}
+              </button>
+            </li>
+          ))}
         </ul>
       </nav>
 
