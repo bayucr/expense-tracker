@@ -2,7 +2,7 @@ export const initialTransactions = [
   {
     id: "trx-1",
     title: "Monthly Salary",
-    amount: 14000,
+    amount: 2500000,
     type: "income",
     category: "Deposit",
     createdAt: "2026-11-20",
@@ -10,7 +10,7 @@ export const initialTransactions = [
   {
     id: "trx-2",
     title: "Supermarket Weekly",
-    amount: 604.36,
+    amount: 650000,
     type: "expense",
     category: "Groceries",
     createdAt: "2026-11-21",
@@ -18,7 +18,7 @@ export const initialTransactions = [
   {
     id: "trx-3",
     title: "Running Shoes",
-    amount: 296.65,
+    amount: 500000,
     type: "expense",
     category: "Clothes and Shoes",
     createdAt: "2026-11-22",
@@ -26,7 +26,7 @@ export const initialTransactions = [
   {
     id: "trx-4",
     title: "Coffee & Lunch",
-    amount: 206.48,
+    amount: 250000,
     type: "expense",
     category: "Cafes and Restaurants",
     createdAt: "2026-11-24",
@@ -34,7 +34,7 @@ export const initialTransactions = [
   {
     id: "trx-5",
     title: "Gym Membership",
-    amount: 182.44,
+    amount: 350000,
     type: "expense",
     category: "Sport",
     createdAt: "2026-11-25",
