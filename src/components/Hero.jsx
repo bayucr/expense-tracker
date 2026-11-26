@@ -1,15 +1,7 @@
 import { ArrowDownLeft, ArrowUpRight } from "lucide-react";
+import { formatRupiah } from "../utils/formatCurrency";
 
 export default function Hero({ totalBalance }) {
-  // Ubah angka mentah jadi format ribuan dengan 2 angka di belakang koma
-  const formatRupiah = (amount) => {
-    return amount.toLocaleString("id-ID", {
-      style: "currency",
-      currency: "IDR",
-      maximumFractionDigits: 0,
-    });
-  };
-
   return (
     <section className="flex items-center justify-between py-3 text-white">
       {/* Bagian Kiri: Teks Sapaan & Tombol Aksi */}
