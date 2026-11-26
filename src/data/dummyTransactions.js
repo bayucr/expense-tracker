@@ -1,0 +1,42 @@
+export const initialTransactions = [
+  {
+    id: "trx-1",
+    title: "Monthly Salary",
+    amount: 14000,
+    type: "income",
+    category: "Deposit",
+    createdAt: "2026-11-20",
+  },
+  {
+    id: "trx-2",
+    title: "Supermarket Weekly",
+    amount: 604.36,
+    type: "expense",
+    category: "Groceries",
+    createdAt: "2026-11-21",
+  },
+  {
+    id: "trx-3",
+    title: "Running Shoes",
+    amount: 296.65,
+    type: "expense",
+    category: "Clothes and Shoes",
+    createdAt: "2026-11-22",
+  },
+  {
+    id: "trx-4",
+    title: "Coffee & Lunch",
+    amount: 206.48,
+    type: "expense",
+    category: "Cafes and Restaurants",
+    createdAt: "2026-11-24",
+  },
+  {
+    id: "trx-5",
+    title: "Gym Membership",
+    amount: 182.44,
+    type: "expense",
+    category: "Sport",
+    createdAt: "2026-11-25",
+  },
+];
